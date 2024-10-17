@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Button Project</title>
+</head>
+<body>
+    <div class="background">
+        <div class="container">
+            <img src="y33ofj4y.bmp" alt="image of a cat" width="300px">
+            <p>The purpose of this site is no purpose</p>
+            <p>Click the button to add to the counter</p>
+            <p>Hold the button down to speed it up</p>
+            <h2 id="h22">Select your color: <span id="colorOutput"></span></h2>
+            <label>red:</label>
+            <input type="range" id="rangeRed" value="0" min="0" max="255">
+            <label>green:</label>
+            <input type="range" id="rangeGreen" value="139" min="0" max="255">
+            <label>blue:</label>
+            <input type="range" id="rangeBlue" value="168" min="0" max="255">
+            <br>
+            <button class="button" onclick="btnPressed()">Button</button>
+            <p>Clicks: <a id="clicks">0</a></p>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>

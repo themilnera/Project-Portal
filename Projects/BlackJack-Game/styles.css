@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(154, 236, 247);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+}
+
+img {
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
+.deck{
+    position: absolute;
+    top: 140px;
+    left: 60px;
+    transform: scale(2.1, 1.95);
+}
+
+
+.card{
+    width: 89px;
+    height: 125px;
+    margin: 2px;
+    border-style: solid;
+    border-color: rgb(169, 139, 139);
+    border-width: 2px;
+    border-radius: 5px;
+
+    /*make this relative to stop stacking*/
+    
+    
+    display: flex;
+    flex-flow: row, wrap;
+    justify-content: space-between;
+}
+
+.cardContainer{
+    width: 380px;
+    border-radius: 5px;
+    background-color: white;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-left: 160px;
+    margin-top: 10px;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.playerContainer{
+    background-color: white;
+    border-radius: 5px;
+    width: 555px;
+    height: 30%;
+    padding: 23px;
+    position: absolute;
+    top: 300px;
+    left: 5px;
+    display: flex;
+    flex-flow: row nowrap;
+
+}
+.inputContainer{
+    position: absolute;
+    background-color: white;
+    width: 500px;
+    margin-top: 600px;
+    margin-left: 30px;
+    padding: 5px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cardLeft{
+    text-align: center;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.cardCenter{
+    align-self: center;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cardRight{
+    text-align: center;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    transform: rotateX(180deg);
+}
+
+.suitCenter{
+    transform: scale(2,2);
+}
+
+.red{
+    color: red;
+}
+
+.cardBack{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    transform: scaleX(1.08);
+
+}
+
+.hide{
+    display: none;
+}
+
+.button{
+    background-color: #04650b; /* Green */
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding: 2px 20px;
+}
+.alertField{
+    margin-top: 180px;
+    margin-left: 20px;
+    width: 100%;
+    height: 100px;
+    align-self: flex-center;
+    font-size: 30px;
+}

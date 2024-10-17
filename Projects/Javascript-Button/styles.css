@@ -1,0 +1,29 @@
+body{
+    background: black;
+    font-family: Geneva, Tahoma, sans-serif;
+}
+.background{
+    margin-left: 200px;
+    margin-right: 200px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(102, 100, 100);    
+}
+
+.container{
+    border-style: solid;
+    border-color: white;
+    background-color: inherit;
+    border-width: 2px;
+    margin: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.container p{
+    color: white;
+}
